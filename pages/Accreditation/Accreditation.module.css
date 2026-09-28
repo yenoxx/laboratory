@@ -1,0 +1,205 @@
+.main {
+    flex: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.pageHeader {
+    background: linear-gradient(135deg, #0f2a4a 0%, #1a4b8c 100%);
+    padding: 32px 0;
+    text-align: center;
+}
+
+.pageTitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.section {
+    padding: 48px 0;
+}
+
+.summarySection {
+    padding: 48px 0;
+}
+
+.documentSection {
+    padding: 24px 0 48px;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.sectionTag {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a4b8c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.sectionTitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f2a4a;
+    margin-bottom: 8px;
+}
+
+.sectionSubtitle {
+    font-size: 15px;
+    color: #64748b;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.accreditBanner {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 36px 40px;
+    border: 1px solid #dbeafe;
+    box-shadow: 0 8px 24px rgba(15, 42, 74, 0.07);
+}
+
+.accreditIcon {
+    width: 80px;
+    height: 80px;
+    background: rgba(16, 185, 129, 0.15);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.accreditInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accreditInfo a {
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.accreditInfo a:hover {
+    color: #2d6cc0;
+}
+
+.accreditInfo h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f2a4a;
+}
+
+.accreditInfo p {
+    font-size: 15px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.imageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.imageLink {
+    display: block;
+    max-width: 1200px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(15, 42, 74, 0.15);
+    border: 1px solid #e2e8f0;
+    transition: all 0.25s ease;
+    cursor: zoom-in;
+}
+
+.imageLink:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(15, 42, 74, 0.2);
+    border-color: #2d6cc0;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 900px) {
+    .accreditBanner {
+        flex-direction: column;
+        text-align: center;
+        padding: 28px 24px;
+    }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .pageHeader {
+        padding: 24px 0;
+    }
+
+    .pageTitle {
+        font-size: 26px;
+    }
+
+    .sectionTitle {
+        font-size: 22px;
+    }
+
+    .section {
+        padding: 32px 0;
+    }
+
+    .summarySection {
+        padding: 32px 0;
+    }
+
+    .documentSection {
+        padding: 24px 0 32px;
+    }
+
+    .sectionHeader {
+        margin-bottom: 18px;
+    }
+
+    .accreditBanner {
+        padding: 24px 16px;
+        border-radius: 12px;
+    }
+
+    .accreditIcon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .accreditInfo h2 {
+        font-size: 18px;
+    }
+
+    .accreditInfo p {
+        font-size: 14px;
+    }
+
+}

@@ -1,0 +1,358 @@
+.main {
+    flex: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.pageHeader {
+    background: linear-gradient(135deg, #0f2a4a 0%, #1a4b8c 100%);
+    padding: 32px 0;
+    text-align: center;
+}
+
+.pageTitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.section {
+    padding: 64px 0;
+}
+
+.section:nth-of-type(even) {
+    background: #ffffff;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.sectionTag {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a4b8c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.blockTitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f2a4a;
+}
+
+.aboutBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.aboutImages {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 24px;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.aboutText p {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+.aboutText a {
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.aboutText a:hover {
+    color: #2d6cc0;
+}
+
+.aboutImageBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.aboutImage {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(15, 42, 74, 0.12);
+}
+
+.imageCaption {
+    font-size: 13px;
+    color: #94a3b8;
+    text-align: center;
+}
+
+.activitiesList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.activityItem {
+    display: flex;
+    gap: 16px;
+    padding: 24px;
+    background: #f0f4f8;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+.activityIcon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #1a4b8c, #2d6cc0);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.activityItem h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0f2a4a;
+    margin-bottom: 6px;
+}
+
+.activityItem p {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.teamGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.structureIntro {
+    max-width: 900px;
+    margin: -12px auto 32px;
+    color: #4a5568;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.labStructure {
+    display: grid;
+    grid-template-columns: minmax(280px, 420px) 1fr;
+    gap: 0;
+    align-items: stretch;
+    margin-top: 32px;
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(15, 42, 74, 0.06);
+    transition: all 0.25s ease;
+}
+
+.labStructure:hover {
+    transform: translateY(-4px);
+    border-color: #2d6cc0;
+    box-shadow: 0 12px 32px rgba(15, 42, 74, 0.08);
+}
+
+.labHeadCard {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.labStructure:hover .labHeadCard {
+    transform: none;
+    box-shadow: none;
+}
+
+.labInfoCard {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding-left: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.labInfoImageWrapper {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background: #edf2f7;
+}
+
+.labInfoImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.labInfoText {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.labInfoTitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f2a4a;
+    line-height: 1.35;
+}
+
+.labInfoDesc {
+    font-size: 14px;
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+.labInfoList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 12px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.labInfoList span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #4a5568;
+}
+
+.labInfoList svg {
+    color: #1a4b8c;
+    flex-shrink: 0;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 900px) {
+    .aboutBlock {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .teamGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .labStructure {
+        grid-template-columns: 1fr;
+    }
+
+    .labInfoCard {
+        padding: 0px;
+    }
+
+    .labInfoText {
+        padding: 0px 20px 20px 20px;
+    }
+
+    .activitiesList {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .pageHeader {
+        padding: 24px 0;
+    }
+
+    .pageTitle {
+        font-size: 26px;
+    }
+
+    .blockTitle {
+        font-size: 22px;
+    }
+
+    .section {
+        padding: 36px 0;
+    }
+
+    .sectionHeader {
+        margin-bottom: 24px;
+    }
+
+    .aboutText p {
+        font-size: 14px;
+    }
+
+    .structureIntro {
+        margin: -8px auto 24px;
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .activityItem {
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .activityIcon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .activityItem h3 {
+        font-size: 14px;
+    }
+
+    .activityItem p {
+        font-size: 13px;
+    }
+
+    .labInfoCard {
+        padding: 0px;
+    }
+
+    .labInfoText {
+        padding: 0px 18px 22px 22px;
+    }
+
+    .labInfoTitle {
+        font-size: 18px;
+    }
+
+}
