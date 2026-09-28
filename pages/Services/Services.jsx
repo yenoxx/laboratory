@@ -106,23 +106,16 @@ function Services() {
                                 <span className={styles.sectionTag}>Оборудование</span>
                                 <h2 className={styles.equipmentTitle}>Современная аналитическая база</h2>
                                 <p>
-                                    Испытательный центр оснащен современным&nbsp;
-                                    <a
+                                    Испытательный центр оснащен современным <a
                                         href="https://fct.kubstu.ru/equipment/scientific"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                    >
-                                        аналитическим
-                                    </a>
-                                    &nbsp;и&nbsp;
-                                    <a
+                                    > аналитическим </a> и <a
                                         href="https://fct.kubstu.ru/equipment/pilot"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                    >
-                                        испытательным 
-                                    </a>
-                                    &nbsp;позволяющим на высоком уровне решать задачи  по идентификации, оценке качества и безопасности, 
+                                    > испытательным </a> оборудованием, 
+                                    позволяющим на высоком уровне решать задачи  по идентификации, оценке качества и безопасности, 
                                     проводить экспертные исследования, реализуя следующие методы анализа:
                                 </p>
                             </div>
