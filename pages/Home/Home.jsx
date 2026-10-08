@@ -3,6 +3,7 @@ import NavBar from '../components/ui/NavBar';
 import Footer from '../components/ui/Footer';
 import HeroBanner from '../components/ui/HeroBanner';
 import AccreditedEntity from '../components/ui/AccreditedEntity';
+import Gallery from '../components/ui/Gallery';
 import styles from './Home.module.css';
 
 function Home() {
@@ -64,12 +65,20 @@ function Home() {
                                     <span className={styles.imageCaption}>Коллектив испытательного центра</span>
                                 </div>
                                 <div className={styles.aboutImageBlock}>
-                                    <img
-                                        src="/images/lab/lab5.jpg"
-                                        alt="Фото из лаборатории"
-                                        className={styles.aboutImage}
+                                    <Gallery 
+                                        images={[
+                                            "/images/lab/lab1.jpg",
+                                            "/images/lab/lab2.jpg",
+                                            "/images/lab/lab3.jpg",
+                                            "/images/lab/lab4.jpg",
+                                            "/images/lab/lab5.jpg",
+                                            "/images/lab/lab6.jpg",
+                                            "/images/lab/lab7.jpg",
+                                            "/images/lab/lab8.jpg",
+                                        ]} 
+                                        height={300} 
                                     />
-                                    <span className={styles.imageCaption}>Фото из лаборатории</span>
+                                    <span className={styles.imageCaption}>Фото лабораторий</span>
                                 </div>
                             </div>
                         </div>

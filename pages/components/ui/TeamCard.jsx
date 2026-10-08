@@ -1,9 +1,9 @@
 import styles from '../styles/TeamCard.module.css';
 
-function TeamCard({ photo, name, position, degree, description, className = '' }) {
+function TeamCard({ photo, name, position, degree, description, className = '', panel = 'show' }) {
     return (
         <div className={`${styles.card} ${className}`}>
-            <div className={styles.photoWrapper}>
+            <div className={`${styles.photoWrapper} ${panel == 'show' ? styles.photoPanel : ''}`}>
                 {photo ? (
                     <img src={photo} alt={name} className={styles.photo} />
                 ) : (

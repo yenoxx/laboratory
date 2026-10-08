@@ -4,6 +4,7 @@
     padding: 80px 0 60px;
     overflow: hidden;
     border-bottom: 1px solid #dbe7f6;
+    box-shadow: 0 10px 30px rgba(26, 75, 140, 0.08);
 }
 
 .hero::before {
@@ -39,9 +40,8 @@
 }
 
 .accreditIcon {
-    width: 56px;
-    height: 56px;
-    -background: #dbf5ec;
+    width: 256px;
+    height: 128px;
     background: #ffffff;
     border-radius: 10px;
     display: flex;
@@ -60,6 +60,10 @@
 .accreditText a {
     text-decoration: underline;
     transition: color 0.2s ease;
+}
+
+.accreditImage {
+    object-fit: cover;
 }
 
 .accreditText a:hover {
@@ -169,8 +173,8 @@
     }
 
     .accreditIcon {
-        width: 44px;
-        height: 44px;
+        width: 128px;
+        height: 64px;
     }
 
     .accreditText {

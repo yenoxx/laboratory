@@ -51,15 +51,15 @@
 }
 
 .priceBlock {
-    background: #ffffff;
+    background: #0f2a4a;
     border-radius: 16px;
     padding: 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-    color: #0f2a4a;
-    border: 1px solid #dbeafe;
+    color: #ffffff;
+    border: 0px solid #dbeafe;
     box-shadow: 0 8px 24px rgba(15, 42, 74, 0.07);
 }
 
@@ -72,7 +72,7 @@
 .priceInfo svg {
     flex-shrink: 0;
     opacity: 0.9;
-    color: #1a4b8c;
+    color: #ffffff;
 }
 
 .priceInfo h3 {
@@ -83,7 +83,7 @@
 
 .priceInfo p {
     font-size: 14px;
-    color: #64748b;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .priceNotice {
@@ -97,7 +97,7 @@
     align-items: center;
     gap: 8px;
     padding: 12px 24px;
-    background: #1a4b8c;
+    background: #10b981;
     color: #ffffff;
     font-weight: 600;
     font-size: 14px;
@@ -108,7 +108,7 @@
 }
 
 .priceBtn:hover {
-    background: #2d6cc0;
+    background: #34d399;
     transform: translateY(-1px);
 }
 

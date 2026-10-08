@@ -2,6 +2,7 @@ import NavBar from '../components/ui/NavBar';
 import Footer from '../components/ui/Footer';
 import TeamCard from '../components/ui/TeamCard';
 import AccreditedEntity from '../components/ui/AccreditedEntity';
+import Gallery from '../components/ui/Gallery';
 import styles from './About.module.css';
 
 const leadership = [
@@ -30,17 +31,17 @@ const labHeads = [
         description: 'Лаборатория контроля качества и безопасности, каб. 217',
     },
     {
-        name: 'Заведующий(-ая)',
-        position: 'Заведующий(-ая) микробиологической лабораторией',
+        name: 'Хасанова Екатерина Александровна',
+        position: 'Заведующая микробиологической лабораторией',
         degree: '',
-        photo: null,
+        photo: '/images/team/Hasanova_E_A.jpg',
         description: 'Микробиологическая лаборатория, каб. 314',
     },
     {
-        name: 'Заведующий(-ая)',
-        position: 'Заведующий(-ая) лабораторией контроля качества алкогольной продукции',
-        degree: '',
-        photo: null,
+        name: 'Начевная Екатерина Владимировна',
+        position: 'Заведующая лабораторией контроля качества алкогольной продукции',
+        degree: 'Старший преподаватель',
+        photo: '/images/team/Nachevnaya_E_V.jpg',
         description: 'Лаборатория контроля качества алкогольной продукции, каб. 608',
     },
 ];
@@ -54,7 +55,7 @@ const labs = [
         phone: '(861) 253-67-60, доб. 4-50',
     },
     {
-        photo: null,
+        photo: '/images/lab/lab9.jpg',
         title: 'Микробиологическая лаборатория',
         description: 'Микробиологические исследования продукции на соответствие требованиям безопасности.',
         address: 'ул. Московская, каб. 314',
@@ -74,11 +75,13 @@ function About() {
         <>
             <NavBar />
             <main className={styles.main}>
+                {/*
                 <section className={styles.pageHeader}>
                     <div className={styles.container}>
                         <h1 className={styles.pageTitle}>О нас</h1>
                     </div>
                 </section>
+                */}
 
                 <section className={styles.section}>
                     <div className={styles.container}>
@@ -124,12 +127,20 @@ function About() {
                                     <span className={styles.imageCaption}>Коллектив Испытательного центра</span>
                                 </div>
                                 <div className={styles.aboutImageBlock}>
-                                    <img
-                                        src="/images/lab/lab5.jpg"
-                                        alt="Фото из лаборатории"
-                                        className={styles.aboutImage}
+                                    <Gallery 
+                                        images={[
+                                            "/images/lab/lab1.jpg",
+                                            "/images/lab/lab2.jpg",
+                                            "/images/lab/lab3.jpg",
+                                            "/images/lab/lab4.jpg",
+                                            "/images/lab/lab5.jpg",
+                                            "/images/lab/lab6.jpg",
+                                            "/images/lab/lab7.jpg",
+                                            "/images/lab/lab8.jpg",
+                                        ]} 
+                                        height={300} 
                                     />
-                                    <span className={styles.imageCaption}>Фото из лаборатории</span>
+                                    <span className={styles.imageCaption}>Фото лабораторий</span>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +226,7 @@ function About() {
 
                             return (
                                 <div key={lab.title} className={styles.labStructure}>
-                                    <TeamCard {...person} className={styles.labHeadCard} />
+                                    <TeamCard {...person} panel='' className={styles.labHeadCard} />
                                     <div className={styles.labInfoCard}>
                                         <div className={styles.labInfoImageWrapper}>
                                             <img

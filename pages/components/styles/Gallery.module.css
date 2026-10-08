@@ -1,0 +1,102 @@
+.galleryWrapper {
+    display: inline-block;
+    width: 100%;
+    max-width: 700px;
+}
+
+.gallery {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.galleryImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    user-select: none;
+
+    /* ADDED FADE */
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+}
+
+.galleryImage.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+/* Arrows */
+.galleryArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    border: none;
+    font-size: 1.8rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, transform 0.15s ease;
+    padding-bottom: 2px;
+    z-index: 3;
+}
+
+.galleryArrow:hover {
+    background: rgba(0, 0, 0, 0.75);
+    transform: translateY(-50%) scale(1.08);
+}
+
+.galleryArrow:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.galleryArrowLeft {
+    left: 12px;
+    padding-right: 2px;
+}
+
+.galleryArrowRight {
+    right: 12px;
+    padding-left: 2px;
+}
+
+/* Dots (below the image) */
+.galleryDots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.galleryDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: #cfcfcf;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.galleryDot:hover {
+    background: #9a9a9a;
+}
+
+.galleryDot.active {
+    background: #333;
+    transform: scale(1.3);
+}
