@@ -29,19 +29,19 @@ const contacts = [
     },
     {
         title: 'Микробиологическая лаборатория',
-        name: '',
+        name: 'Хасанова Екатерина Александровна',
         degree: '',
         address: 'ул. Московская, каб. 314',
         phone: '(861) 255-15-98, доб. 2-15',
-        email: '',
+        email: 'ktgr11@mail.ru',
     },
     {
         title: 'Лаборатория контроля качества алкогольной продукции',
-        name: '',
-        degree: '',
+        name: 'Начевная Екатерина Владимировна',
+        degree: 'Старший преподаватель',
         address: 'ул. Московская, каб. 608',
         phone: '(861) 255-10-45, доб. 3-61',
-        email: '',
+        email: 'ktgr11@mail.ru',
     },
 ];
 
@@ -50,12 +50,6 @@ function Contacts() {
         <>
             <NavBar />
             <main className={styles.main}>
-                <section className={styles.pageHeader}>
-                    <div className={styles.container}>
-                        <h1 className={styles.pageTitle}>Контакты</h1>
-                    </div>
-                </section>
-
                 <section className={styles.section}>
                     <div className={styles.container}>
                         <div className={styles.mainContactsGrid}>
@@ -67,7 +61,7 @@ function Contacts() {
                                     </svg>
                                 </div>
                                 <h3>Адрес</h3>
-                                <p>г. Краснодар, ул. Московская</p>
+                                <p>г.&nbsp;Краснодар, ул.&nbsp;Московская, д.&nbsp;2, корпус&nbsp;Г</p>
                                 <span className={styles.contactDetail}>Кубанский государственный технологический университет</span>
                             </div>
                             <div className={styles.mainContactCard}>

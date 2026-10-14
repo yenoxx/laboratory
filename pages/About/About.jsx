@@ -62,7 +62,7 @@ const labs = [
         phone: '(861) 255-15-98, доб. 2-15',
     },
     {
-        photo: null,
+        photo: '/images/lab/lab11.jpg',
         title: 'Лаборатория контроля качества алкогольной продукции',
         description: 'Испытания алкогольной и слабоалкогольной продукции, идентификация и экспертиза.',
         address: 'ул. Московская, каб. 608',
@@ -137,6 +137,14 @@ function About() {
                                             "/images/lab/lab6.jpg",
                                             "/images/lab/lab7.jpg",
                                             "/images/lab/lab8.jpg",
+                                            "/images/lab/lab9.jpg",
+                                            "/images/lab/lab10.jpg",
+                                            "/images/lab/lab11.jpg",
+                                            "/images/lab/lab12.jpg",
+                                            "/images/lab/lab13.jpg",
+                                            "/images/lab/lab14.jpg",
+                                            "/images/lab/lab15.jpg",
+                                            "/images/lab/lab16.jpg",
                                         ]} 
                                         height={300} 
                                     />

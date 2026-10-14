@@ -8,12 +8,6 @@ function Accreditation() {
         <>
             <NavBar />
             <main className={styles.main}>
-                <section className={styles.pageHeader}>
-                    <div className={styles.container}>
-                        <h1 className={styles.pageTitle}>Аккредитация</h1>
-                    </div>
-                </section>
-
                 <section className={styles.summarySection}>
                     <div className={styles.container}>
                         <div className={styles.accreditBanner}>

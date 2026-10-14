@@ -1,10 +1,20 @@
 .hero {
     position: relative;
     background: linear-gradient(180deg, #ffffff 0%, #eef4fc 100%);
-    padding: 80px 0 60px;
+    padding: 80px 0 100px;
     overflow: hidden;
-    border-bottom: 1px solid #dbe7f6;
     box-shadow: 0 10px 30px rgba(26, 75, 140, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background-image: url('/images/lab/lab_bg.jpg');
+    background-size: cover;        /* cover | contain | 100% 100% | auto */
+    background-position: center;   /* center | top | bottom | left | right */
+    background-repeat: no-repeat;  /* no-repeat | repeat | repeat-x | repeat-y */
+    background-attachment: scroll;  /* fixed | scroll | local */
 }
 
 .hero::before {
@@ -18,13 +28,19 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding-bottom: 48px;
+    margin: 0 24px;
     position: relative;
     z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    display: inline-flex;
+    background: #ffffff99;
+    border: 1px solid #dbeafe99;
+    border-radius: 12px;
 }
 
 .accreditBanner {

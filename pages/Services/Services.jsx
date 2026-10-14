@@ -58,12 +58,6 @@ function Services() {
         <>
             <NavBar />
             <main className={styles.main}>
-                <section className={styles.pageHeader}>
-                    <div className={styles.container}>
-                        <h1 className={styles.pageTitle}>Услуги</h1>
-                    </div>
-                </section>
-
                 <section className={styles.section}>
                     <div className={styles.container}>
                         <div className={styles.priceBlock}>
