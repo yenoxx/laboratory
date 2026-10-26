@@ -16,6 +16,10 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.4.1",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-plugin-webfont-dl": "^3.13.1"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
   }
 }

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from '../styles/Footer.module.css';
 import AccreditedEntity from './AccreditedEntity';
+import LabAddress from './LabAddress';
 
 function Footer() {
     return (
@@ -36,7 +37,7 @@ function Footer() {
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                                 <circle cx="12" cy="10" r="3"/>
                             </svg>
-                            г.&nbsp;Краснодар, ул.&nbsp;Московская, д.&nbsp;2, корпус&nbsp;Г
+                            <LabAddress />
                         </p>
                         <p className={styles.contactLine}>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

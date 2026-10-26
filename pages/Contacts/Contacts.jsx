@@ -1,13 +1,14 @@
 import NavBar from '../components/ui/NavBar';
 import Footer from '../components/ui/Footer';
 import styles from './Contacts.module.css';
+import LabAddress from '../components/ui/LabAddress';
 
 const contacts = [
     {
         title: 'Директор испытательного центра',
         name: 'Бутина Елена Александровна',
         degree: 'Доктор техн. наук, профессор',
-        address: 'ул. Московская, каб. 217',
+        address: 'ул. Московская, д. 2, лабораторный корпус Г, каб. 217',
         phone: '(861) 253-67-60, доб. 4-50',
         email: 'ktgr11@mail.ru',
     },
@@ -15,7 +16,7 @@ const contacts = [
         title: 'Заместитель директора, менеджер по качеству',
         name: 'Воронцова Оксана Сергеевна',
         degree: 'Канд. техн. наук, доцент',
-        address: 'ул. Московская, каб. 217',
+        address: 'ул. Московская, д. 2, лабораторный корпус Г, каб. 217',
         phone: '(861) 253-67-60, доб. 2-73',
         email: 'ktgr11@mail.ru',
     },
@@ -23,7 +24,7 @@ const contacts = [
         title: 'Лаборатория контроля качества и безопасности',
         name: 'Герасименко Евгений Олегович',
         degree: 'Доктор техн. наук, профессор',
-        address: 'ул. Московская, каб. 217',
+        address: 'ул. Московская, д. 2, лабораторный корпус Г, каб. 217',
         phone: '(861) 253-67-60, доб. 4-50',
         email: 'ktgr11@mail.ru',
     },
@@ -31,15 +32,15 @@ const contacts = [
         title: 'Микробиологическая лаборатория',
         name: 'Хасанова Екатерина Александровна',
         degree: '',
-        address: 'ул. Московская, каб. 314',
+        address: 'ул. Московская, д. 2, лабораторный корпус Г, каб. 314',
         phone: '(861) 255-15-98, доб. 2-15',
         email: 'ktgr11@mail.ru',
     },
     {
         title: 'Лаборатория контроля качества алкогольной продукции',
         name: 'Начевная Екатерина Владимировна',
-        degree: 'Старший преподаватель',
-        address: 'ул. Московская, каб. 608',
+        degree: '',
+        address: 'ул. Московская, д. 2, лабораторный корпус Г, каб. 608',
         phone: '(861) 255-10-45, доб. 3-61',
         email: 'ktgr11@mail.ru',
     },
@@ -61,7 +62,7 @@ function Contacts() {
                                     </svg>
                                 </div>
                                 <h3>Адрес</h3>
-                                <p>г.&nbsp;Краснодар, ул.&nbsp;Московская, д.&nbsp;2, корпус&nbsp;Г</p>
+                                <LabAddress />
                                 <span className={styles.contactDetail}>Кубанский государственный технологический университет</span>
                             </div>
                             <div className={styles.mainContactCard}>

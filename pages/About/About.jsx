@@ -28,21 +28,21 @@ const labHeads = [
         position: 'Заведующий лабораторией контроля качества и безопасности',
         degree: 'Доктор техн. наук, профессор',
         photo: '/images/team/Gerasimenko_E_O.jpg',
-        description: 'Лаборатория контроля качества и безопасности, каб. 217',
+        description: 'Лаборатория контроля качества и безопасности',
     },
     {
         name: 'Хасанова Екатерина Александровна',
         position: 'Заведующая микробиологической лабораторией',
         degree: '',
         photo: '/images/team/Hasanova_E_A.jpg',
-        description: 'Микробиологическая лаборатория, каб. 314',
+        description: 'Микробиологическая лаборатория',
     },
     {
         name: 'Начевная Екатерина Владимировна',
         position: 'Заведующая лабораторией контроля качества алкогольной продукции',
-        degree: 'Старший преподаватель',
+        degree: '',
         photo: '/images/team/Nachevnaya_E_V.jpg',
-        description: 'Лаборатория контроля качества алкогольной продукции, каб. 608',
+        description: 'Лаборатория контроля качества алкогольной продукции',
     },
 ];
 
@@ -51,21 +51,21 @@ const labs = [
         photo: '/images/lab/lab4.jpg',
         title: 'Лаборатория контроля качества и безопасности',
         description: 'Проведение физико-химических и органолептических исследований пищевой продукции, сырья и ингредиентов.',
-        address: 'ул. Московская, каб. 217',
+        address: 'ул. Московская, д. 2, лабораторный корпус Г, каб. 217',
         phone: '(861) 253-67-60, доб. 4-50',
     },
     {
         photo: '/images/lab/lab9.jpg',
         title: 'Микробиологическая лаборатория',
         description: 'Микробиологические исследования продукции на соответствие требованиям безопасности.',
-        address: 'ул. Московская, каб. 314',
+        address: 'ул. Московская, д. 2, лабораторный корпус Г, каб. 314',
         phone: '(861) 255-15-98, доб. 2-15',
     },
     {
         photo: '/images/lab/lab11.jpg',
         title: 'Лаборатория контроля качества алкогольной продукции',
         description: 'Испытания алкогольной и слабоалкогольной продукции, идентификация и экспертиза.',
-        address: 'ул. Московская, каб. 608',
+        address: 'ул. Московская, д. 2, лабораторный корпус Г, каб. 608',
         phone: '(861) 255-10-45, доб. 3-61',
     },
 ];
@@ -75,13 +75,6 @@ function About() {
         <>
             <NavBar />
             <main className={styles.main}>
-                {/*
-                <section className={styles.pageHeader}>
-                    <div className={styles.container}>
-                        <h1 className={styles.pageTitle}>О нас</h1>
-                    </div>
-                </section>
-                */}
 
                 <section className={styles.section}>
                     <div className={styles.container}>
@@ -144,7 +137,6 @@ function About() {
                                             "/images/lab/lab13.jpg",
                                             "/images/lab/lab14.jpg",
                                             "/images/lab/lab15.jpg",
-                                            "/images/lab/lab16.jpg",
                                         ]} 
                                         height={300} 
                                     />

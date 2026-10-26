@@ -26,17 +26,9 @@ export default function Gallery({ images, height = 400 }) {
                         src={src}
                         alt={`Слайд ${index + 1}`}
                         className={`${styles.galleryImage} ${index === currentIndex ? styles.active : ''}`}
-                        style={{ transitionDuration: `500ms` }}
+                        style={{ transitionDuration: `250ms` }}
                     />
                 ))}
-
-                {/* Image (no fade)
-                <img
-                    src={images[currentIndex]}
-                    alt={`Слайд ${currentIndex + 1}`}
-                    className={styles.galleryImage}
-                />
-                */}
 
                 {/* Left Arrow */}
                 <button
